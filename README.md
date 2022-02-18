@@ -96,6 +96,6 @@ To run performance tests
 
 ## License
 
-Copyright (c) 2020 Rendered Text
+Copyright (c) 2022 Rendered Text
 
 Distributed under the MIT License. See the file LICENSE.
