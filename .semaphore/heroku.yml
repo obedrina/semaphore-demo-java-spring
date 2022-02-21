@@ -15,8 +15,8 @@ blocks:
         - name: HEROKU_APP_NAME
           value: semaphore-java-demo
       jobs:
-      - name: Push code
-        commands:
-          - checkout --use-cache
-          - heroku git:remote -a $HEROKU_APP_NAME
-          - git push heroku -f $SEMAPHORE_GIT_BRANCH:master
+        - name: Deploy
+          commands:
+            - checkout --use-cache
+            - 'heroku git:remote -a $HEROKU_APP_NAME'
+            - 'git push heroku -f $SEMAPHORE_GIT_BRANCH:master'
